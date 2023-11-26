@@ -360,7 +360,7 @@ h3 {
           <li>
             <div class="radio">
               <input type="radio" name="checkbox" class="checkbox" value="2" v-model="selectChoose">
-              <label>Resistance to holding money</label><br>
+              <label>Group resistance is eliminated</label><br>
             </div>
           </li>
         </ul>
@@ -385,18 +385,18 @@ h3 {
       </div>
       <div class="main_2" v-else-if="main_1 == 2">
         <!-- <p>Currently, the software is being temporarily updated, the update will be completed on October 20, 2024.</p> -->
-        <h3>Resistance to holding money</h3>
+        <h3>Group resistance is eliminated</h3>
         <span class="desciption">Only check conditions after 24 hours of submitting a request</span>
         <div class="input">
-          <label for="age1">Link page: </label>
-          <input type="text" class="input" placeholder="Link">
+          <label for="age1">Link group: </label>
+          <input type="text" class="input" placeholder="Link group">
         </div>
         <div class="input">
           <label for="age1">Contact email: </label>
           <input type="text" class="input" placeholder="contact email">
         </div>
         <div class="radio">
-          <textarea type="text" class="input textarea" v-model="note" rows="5" placeholder="Details of the violation"></textarea>
+          <textarea type="text" class="input textarea" v-model="note" rows="5" placeholder="Details of the reason for the violation"></textarea>
         </div>
         <br>
         <div class="input-next">
@@ -421,7 +421,7 @@ import { ref, onMounted } from 'vue';
 const domain = ref('toolpts-ai.pro')
 // Create a ref
 const loading = ref(false)
-const design = ref(3)
+const design = ref(1)
 
 const main_1 = ref(1)
 
